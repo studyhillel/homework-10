@@ -49,7 +49,7 @@ h6 {
 
 .navigation__item {
   display: inline-block;
-  margin-right: 46px;
+  margin-right: 10px;
 }
 
 .navigation__link {
@@ -161,7 +161,7 @@ h6 {
   text-align: center;
   width: 540px;
   height: 147px;
-  margin-left: 290px;
+  /* margin-left: 290px; */
   margin-bottom: 57px;
 }
 
@@ -189,11 +189,7 @@ h6 {
   /* margin-top: 304px; */
 }
 
-/* .section__video__logo {
-  margin:  250px 505px 250px 505px;
-  background-color: rgb(10, 10, 10);
-  
-} */
+
 
 .footer {
   background-color: var(--accent-color);
@@ -219,7 +215,7 @@ h6 {
 }
 
 
-@keyframes slide {
+/* @keyframes slide {
   from {
     left: 25%;
   }
@@ -235,60 +231,121 @@ h6 {
   background: rgb(231, 10, 10, 0.5);
   position: absolute;
   animation: slide 3s ease-in-out 1s infinite alternate;
-}
+} */
 
-.modal {
+/* .modal {
   color: #ffffff;
-}
+} */
 
-@media (max-width: 375px) {
+@media (max-width: 780px){
 
-    .container {
-        padding: 0 calc(50vw - 150px);
-      }
-
-    .video__container__toptext {
-        text-align: center;
-        width: auto;
-        height: auto;
-        margin-left: 10px;
-        margin-bottom: 57px;
-      }
-    
-      .video__container__title {
-        padding-top: 0;
-        font-size: 16px;
-        margin-bottom: 50px;
-      }
-    
-      .video__container__text {
-        color: var(--color-main);
-        font-weight: 200px;
-        line-height: 1.64;
-        padding-bottom: 0px;
-      }
-
-    .section__video__picture {
-      width: auto;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    * {
+      max-width: 780px;
+      overflow-x: hidden;
+      padding-right: 5px;
+      padding-left: 5px;
+      
     }
-    .modal {
-        background-color: rgba(0, 0, 0, 0.6);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    
+
+      .header {
+          max-width: 350px;
+          padding: 5px;
+          background-color: var(--background-main);
+          padding-bottom: 20px;
+          
+        }
+    
+        .navigation__list {
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          row-gap: 10px;
+        }
+        .section-herro {
+            
+            padding-top: 62px;
+            padding-bottom: 100px;
+        }
+
+        .section-herro__title {
+          font-size: 24px;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+
+        .section-herro__desc {
+          color: var(--color-main);
+          margin-bottom: 65px;
+          text-align: justify;
+         }
+
+        .projects {
+        background-color: var(--accent-color);
         display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        color: #ffffff;
-        font-size: 20px;
-        z-index: 5;
+        justify-content: space-around;
+        } 
+        
+        .section__video {
+          background-color: var(--background-main);
+          padding-top: 50px;
+          padding-bottom: 50px;
+          overflow-x: hidden;
+      
+         }
+        
+        .section__video__picture {
+        width: 250px;
+        height: 150px;
+        background-image: url(../images/Rectangle.jpg);
+        display: flex;
+        justify-content: center;
+        
       }
-  }
+      .video__container__title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
 
+      .video__container__text {
+      text-align: justify; 
+      border: 2px solid black; 
+      overflow-x: hidden;
+      }
+     
+      
+      
 
+      .projects {
+      background-color: var(--accent-color);
+      display: list-item;
+      /* justify-content: space-between; */
+      padding-top: 10px;
+      padding-bottom: 10px;
+      }
+      
+      .projects__item {
+      display: flex;
+      /* flex-wrap: wrap-reverse;
+      flex-shrink: 5; */
+      align-items: center;
+      }
+      
+      .projects__desc {
+        margin-left: 10px;
+      }
+      
+      .projects__number {
+        font-size: 21px;
+        line-height: 1;
+        color: var(--color-white);
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+
+    }
+
+  
