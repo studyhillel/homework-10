@@ -113,6 +113,7 @@ h6 {
 }
 
 .section__about__me {
+  
   margin-bottom: 100px;
   margin-top: 112px;
 }
@@ -153,15 +154,19 @@ h6 {
   background-color: var(--background-main);
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  
+  flex-direction: column;
+  
+  align-items: center;
   
   
 }
 
 .video__container__toptext {
   text-align: center;
-  width: 540px;
-  height: 147px;
-  /* margin-left: 290px; */
+  /* width: 540px;
+  height: 147px; */
   margin-bottom: 57px;
 }
 
@@ -173,8 +178,7 @@ h6 {
 
 .video__container__text {
   color: var(--color-main);
-  font-weight: 400px;
-  line-height: 1.64;
+  text-align: justify;
   padding-bottom: 0px;
 }
 
@@ -249,7 +253,7 @@ h6 {
     
 
       .header {
-          max-width: 350px;
+          /* max-width: 350px; */
           padding: 5px;
           background-color: var(--background-main);
           padding-bottom: 20px;
